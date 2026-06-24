@@ -19,10 +19,10 @@
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Correo electronico"
+        android:layout_marginBottom="16dp"
+        android:hint="Usuario"
         android:inputType="textEmailAddress"
-        android:minHeight="50dp"
-        android:layout_marginBottom="16dp"/>
+        android:minHeight="50dp" />
 
     <EditText
         android:id="@+id/etPassword"
@@ -40,5 +40,16 @@
         android:text="Iniciar Sesión"
         android:backgroundTint="#2E7D32"
         android:minHeight="50dp"/>
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Olvidé mi contraseña"
+        android:textColor="#005B5C"
+        android:textSize="16sp"
+        android:focusable="true"
+        android:clickable="true" />
 
 </LinearLayout>
