@@ -2,6 +2,7 @@ package com.example.agrisphere
 
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.POST
 
@@ -63,5 +64,11 @@ interface ApiService {
         @Header("Authorization") token: String,
         @Body request: EmpresaConfigRequest
     ): Response<EmpresaConfigResponse>
+
+    // 3. ENDPOINT DEL PERFIL DEL EMPLEADO (INV-18)
+    @GET("api/auth/empleados/me")
+    suspend fun obtenerPerfilEmpleado(
+        @Header("Authorization") token: String
+    ): Response<PerfilEmpleadoResponse>
 
 }

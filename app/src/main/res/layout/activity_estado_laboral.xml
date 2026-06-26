@@ -85,9 +85,10 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvDatosEmpleado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rol: Operativo Invernadero\nDepto: Sanidad\nID: EMP-2024-089\nSupervisor: Juan Perez"
+                android:text="Cargando información del servidor..."
                 android:lineSpacingExtra="6dp"
                 android:layout_marginTop="12dp"
                 android:textSize="16sp"/>
