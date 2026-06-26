@@ -1,8 +1,10 @@
 package com.example.agrisphere
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.Bitmap
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -45,6 +47,13 @@ class EstadoLaboralActivity : AppCompatActivity() {
             }
         } else {
             Toast.makeText(this, "No se encontró sesión activa", Toast.LENGTH_LONG).show()
+        }
+        // Vincular el botón de bypass
+        val btnBypassEscaneo = findViewById<Button>(R.id.btnBypassEscaneo)
+        btnBypassEscaneo.setOnClickListener {
+            // Saltamos directamente al Dashboard del INV-17
+            val intent = Intent(this, DashboardActivity::class.java)
+            startActivity(intent)
         }
     }
 }

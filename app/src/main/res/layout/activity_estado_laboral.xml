@@ -94,4 +94,12 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:id="@+id/btnBypassEscaneo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="[Desarrollo] Simular Escaneo"
+        android:backgroundTint="#757575" />
+
 </LinearLayout>
